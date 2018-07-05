@@ -31,8 +31,8 @@
   .nice-select:active, .nice-select.open, .nice-select:focus {
     border-color: #88bfff; }
   .nice-select:after {
-    border-bottom: 2px solid #90a1b5;
-    border-right: 2px solid #90a1b5;
+    border-bottom: 2px solid #435993;
+    border-right: 2px solid #435993;
     content: '';
     display: block;
     height: 5px;
