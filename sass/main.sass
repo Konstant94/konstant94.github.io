@@ -1,0 +1,210 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "libs"
+
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+.btn 
+	background: $b-color
+	color: $b-text
+	padding: 12px 31px
+	border-radius: 7px
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea, select
+		border: #e5e5e5 1px solid
+		border-radius: 4px
+		padding: 20px 0
+
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+.form-control
+	font-family: 'Roboto-LightItalic'
+	text-align: center
+.main-form
+	text-align: center
+
+.checkbox 
+    display: block
+    position: relative
+    padding-left: 35px
+    margin-bottom: 12px
+    cursor: pointer
+    font-family: $default-font
+    font-size: 15px
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+
+/* hide the browser's default checkbox */
+.checkbox input 
+    position: absolute
+    opacity: 0
+    cursor: pointer
+
+
+/* create custom checkbox */
+.check 
+    position: absolute
+    top: 3px
+    left: 0
+    height: 20px
+    width: 20px
+    background-color: #eee
+    border: 1px solid #435993
+    border-radius: 3px
+
+
+/* on mouse-over, add border color */
+.checkbox:hover input ~ .check 
+    background-color: #e9efff
+
+
+/* add background color when the checkbox is checked */
+.checkbox input:checked ~ .check 
+    background-color: #435993
+    border:none
+
+
+/* create the checkmark and hide when not checked */
+.check:after 
+    content: ""
+    position: absolute
+    display: none
+
+
+/* show the checkmark when checked */
+.checkbox input:checked ~ .check:after 
+    display: block
+FF/* checkmark style */
+.checkbox .check:after 
+    left: 6px
+    top: 4px
+    width: 7px
+    height: 9px
+    border: solid white
+    border-width: 0 2px 2px 0
+    -webkit-transform: rotate(45deg)
+    -ms-transform: rotate(45deg)
+    transform: rotate(45deg)
+
+
+.custom-select
+	width: 100%
+	padding: 20px 0 20px 30px
+	color: $b-color
+	font-family: 'Roboto-Light'
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+	margin-bottom: 45px
+.textarea 
+	margin-bottom: 60px
+.display-2
+	font-family: $h2-ff
+	font-size: $h2-font
+	margin-bottom: 	50px
+
+.icon
+	margin-bottom: 30px
+b, strong
+	font-weight: bold
+
+header
+	display: flex
+	padding: 30px 0
+section 
+	padding: 50px 0 20px
+.form-control
+	width: 100%
+.navigation
+	display: flex
+	justify-content: space-evenly
+	a 
+		color: $gray-700
+		text-transform: uppercase
+		text-decoration: none
+		
+		&.active 
+			color: $nav-blue!important 
+		&:hover
+			color: $nav-blue!important 
+
+.title
+	
+	
+	background-position: center
+	text-align: center
+
+	background: url('../img/main-bg.png') fixed repeat-x
+	
+	
+	h1
+		margin: 130px 0 0
+		font-size: $h1-font
+		font-family: 'Roboto-Thin', sans-serif
+section.self-info
+	.text-center
+	.form-group
+		margin-bottom: 26px
+
+
+section.About
+	padding-bottom: 50px
+	.about-descr
+		font-size: 15px
+
+.text-block 
+  width: 250px
+  margin: 50px
+
+
+#go-top 
+  position: fixed 
+  font-family: sans-serif
+  line-height: 30px
+  text-align: center
+  color: #fff
+  bottom: 25px 
+  right: 10px 
+  cursor:pointer 
+  display:none
+  width: 70px
+  height: 30px
+  background: #c0c0c0
+  border-radius: 5px
+
+
+#go-top:hover 
+  background: #333
+
+//ALWAYS END
+
+@import "media"
+
+
+@import "media" // Always at the end
